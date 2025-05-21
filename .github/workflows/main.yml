@@ -1,0 +1,23 @@
+main.yml
+
+name: Crypto Signal Bot
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # تشغيل كل ساعة
+  workflow_dispatch:     # لتشغيله يدويًا
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Run bot
+      run: python main.py
