@@ -1,0 +1,2 @@
+Name: BOT_TOKEN ، Value: 7754325872:AAFsBOXNPapiwDW1pKnY4rny0JLEktTYOec
+Name: CHANNE_ID ، Value: @AYCBOTspot
